@@ -1,0 +1,237 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
+/* navbar css */
+.search-btn {
+    background-color: #fe424d;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 0 1rem 0 1rem;
+}
+
+.search-bar {
+    width: 17rem !important;
+    margin-right: 0.5rem;
+    border-radius: 1rem !important;
+}
+
+.search-btn {
+    border: 1px solid #fe424d !important;
+    border-radius: 1rem !important;
+    background-color: #fe424d !important;
+    color: white !important;
+}
+
+.navbar {
+    height: 4rem;
+}
+
+.fa-globe {
+    padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+.airbnb {
+    padding: 0.5rem 3rem 0.5rem 3rem;
+}
+
+.airbnb:hover {
+    background-color: rgba(220, 220, 220, 0.312);
+}
+
+.fa-compass {
+    color: #fe424d;
+}
+
+/* nav-bottom */
+
+.filter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.filter-box {
+    margin: 0.5rem 1rem 0rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    opacity: 0.55;
+} 
+
+.filter-box:hover {
+    opacity: 1;
+}
+
+.tax-switch {
+    width: 15rem;
+    border: 1px solid black;
+    padding: 1rem 0.8rem;
+    border-radius: 1rem;
+    margin-left: 2rem;
+    font-size: 0.75rem;
+}
+
+/* tax-info */
+.tax-info {
+    display: none;
+    margin-left: 1rem;
+}
+
+/* Scroller */
+
+.scroll-container {
+    overflow: hidden;
+    /* Hide the horizontal scrollbar */
+    white-space: nowrap;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.scroll-row {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prev-btn,
+.next-btn {
+    
+    color: black;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    outline: none;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.category-btn {
+    height: 3rem;
+    background-color: white;
+    border: none;
+}
+
+
+/* footer css */
+.f-info-links a {
+    text-decoration: none;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+    width: 100%;
+    vertical-align: mid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socials i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.f-info-socials i:hover {
+    color: #fe424d;
+    cursor: pointer;
+}
+
+.f-info {
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* Cards */
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.listing-card {
+    border: none !important;
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+}
+
+.card-text {
+    font-weight: 400 !important;
+}
+
+.listing-link {
+    text-decoration: none;
+}
+
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* show page css */
+.show-img {
+    height: 35vh;
+}
+
+/* RATING STARS */
+.star-rating {
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.star-rating .fa-star {
+    font-size: 24px;
+    color: grey;
+    transition: color 0.3s;
+}
+
+.star-rating .fa-star.selected,
+.star-rating .fa-star:hover,
+.star-rating .fa-star:hover~.fa-star {
+    color: yellow;
+    fill: yellow;
+}
+
+.rating-color {
+    color: rgb(251, 226, 3);
+}
