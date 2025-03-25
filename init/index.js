@@ -1,16 +1,20 @@
+require('dotenv').config();
 const mongoose = require('mongoose');
 const initData = require('./data');
 const Listing = require('../models/listing')
 
+const dbUrl = process.env.ATLASDB_URL
+
 //SETUP MONGOOSE
-const main = async () => {
-    await mongoose.connect('mongodb://127.0.0.1:27017/wanderlust');
-}
-main().then((res) => {
-    console.log("Connected to DB!");
+main().then(() => {
+    console.log("connected to DB");
 }).catch((err) => {
     console.log(err);
-})
+});
+
+async function main() {
+    await mongoose.connect(dbUrl);
+}
 
 const initDB = async () => {
     await Listing.deleteMany({})
